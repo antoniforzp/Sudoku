@@ -14,3 +14,7 @@ Whole application consist of some patterns and features:
 
 Author: Antoni Forzpańczyk
 
+Main menu:
+<p align="center">
+  <img src="images/mainView.png" />
+</p>
