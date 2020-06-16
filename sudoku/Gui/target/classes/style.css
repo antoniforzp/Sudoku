@@ -1,0 +1,44 @@
+#textField {
+    -fx-pref-height: 45px;
+    -fx-pref-width: 45px;
+
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+
+    -fx-font-family: Ubuntu;
+    -fx-font-size: 20px;
+
+    -fx-background-color: white
+}
+
+#saveTextField {
+    -fx-pref-width: 100px;
+    -fx-background-color: white;
+    -fx-border-style: solid;
+}
+
+.button:hover {
+    -fx-cursor: pointer;
+    -fx-background-color: #e0ebeb;
+}
+
+.button:pressed {
+    -fx-border-width: 3px;
+}
+
+.combo-box, .button {
+    -fx-font-family: Ubuntu;
+    -fx-text-alignment: center;
+    -fx-background-color: white;
+    -fx-mark-color: #ffb366;
+
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+.combo-box > .label {
+    -fx-text-fill: white;
+
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}

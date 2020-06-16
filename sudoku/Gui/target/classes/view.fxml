@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+    <right>
+        <Pane prefHeight="400.0" prefWidth="257.0" BorderPane.alignment="CENTER">
+            <children>
+
+                <!--TEXTS-->
+                <Text id="title" layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudoku"
+                      textAlignment="CENTER" wrappingWidth="195"/>
+                <Text layoutX="48.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="files:"
+                      textAlignment="CENTER" wrappingWidth="70.0"/>
+                <Text layoutX="139.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="database:"
+                      textAlignment="CENTER" wrappingWidth="70.0"/>
+
+                <!--CHECK-->
+                <Button fx:id="checkButton" layoutX="74.0" layoutY="86.0" mnemonicParsing="false" onAction="#verifyAll"
+                        prefHeight="54.0" prefWidth="110.0" text="%button.check">
+                </Button>
+
+                <!--DAO TO FILE-->
+                <Button fx:id="loadButtonFile" layoutX="48.0" layoutY="231.0" mnemonicParsing="false"
+                        onAction="#loadButtonFile" prefHeight="30.0" prefWidth="70.0" text="%button.load"/>
+                <Button fx:id="saveButtonFile" layoutX="48.0" layoutY="196.0" mnemonicParsing="false"
+                        onAction="#saveButtonFile" prefHeight="30.0" prefWidth="70.0" text="%button.save"/>
+
+                <!--DAO TO DATABASE-->
+                <Button fx:id="loadButtonDB" layoutX="139.0" layoutY="231.0" mnemonicParsing="false" prefHeight="30.0"
+                        prefWidth="70.0" text="%button.load" onAction="#loadButtonDB"/>
+                <Button fx:id="saveButtonDB" layoutX="139.0" layoutY="196.0" mnemonicParsing="false" prefHeight="30.0"
+                        prefWidth="70.0" text="%button.save" onAction="#saveButtonDB"/>
+
+                <!--DIFFICULTIES-->
+                <Button fx:id="easyButton" layoutX="79.0" layoutY="335.0" mnemonicParsing="false" onAction="#easyButton"
+                        prefHeight="30.0" prefWidth="100.0" text="%button.easy"/>
+                <Button fx:id="mediumButton" layoutX="79.0" layoutY="373.0" mnemonicParsing="false"
+                        onAction="#mediumButton" prefHeight="30.0" prefWidth="100.0" text="%button.medium"/>
+                <Button fx:id="hardButton" layoutX="79.0" layoutY="411.0" mnemonicParsing="false" onAction="#hardButton"
+                        prefHeight="30.0" prefWidth="100.0" text="%button.hard"/>
+
+                <!--LANGUAGES-->
+                <ComboBox id="combobox" fx:id="combobox" layoutX="55.0" layoutY="288.0" prefWidth="150.0"
+                          onAction="#changeLanguage" promptText="%combobox.prompter"/>
+
+                <!--AUTHORS-->
+                <Text fx:id="authors" layoutX="96.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%label.authors"
+                      textAlignment="CENTER" wrappingWidth="68.0"/>
+                <Text layoutX="52.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adam Malinowski"
+                      textAlignment="CENTER" wrappingWidth="156.0"/>
+                <Text layoutX="39.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antoni Forzpańczyk"
+                      textAlignment="CENTER" wrappingWidth="183.0"/>
+
+            </children>
+        </Pane>
+    </right>
+</BorderPane>
